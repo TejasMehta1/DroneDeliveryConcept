@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drone Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+</head>
+<body class="droneBack">
+
+
+<div class="container">
+    <h1 style=" margin-bottom: 0px"><i style="font-size: 100px;" class="material-icons">date_range</i></h1>
+    <p>Choose the date and frequency you would like your items to be delivered</p>
+</div>
+<div class="DataEntriesSelect">
+    <label>Frequency:</label>
+    <select id="frequency" style="display: inline; margin-left: 30px" id="cars">
+        <option value="1">1 Week</option>
+        <option value="2">2 Weeks</option>
+        <option value="3">3 Weeks</option>
+        <option value="4">4 Weeks</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <label>Start Week:</label>
+    <input id="calendar" style="margin-left:30px;width: 60%; display: inline" type="date">
+
+
+
+</div>
+<button onclick="summary()" style="border-radius: 20px; margin-top: 261px" class="btn waves-effect waves-light ">Submit
+    <i class="material-icons right">send</i>
+</button>
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+});
+function summary() {
+    let query = location.search;
+    query += "," + document.getElementById("frequency").value + "," + document.getElementById("calendar").value;
+    window.location.href = "summary.html" + query;
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

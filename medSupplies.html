@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Medical Supplies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+</head>
+<body class="droneBack">
+
+
+<div class="container">
+    <h1 style=" margin-bottom: 0px" class="titleDrone"><i style="font-size: 100px;" class="material-icons">local_hospital</i></h1>
+    <p>Select medical supplies you require</p>
+</div>
+<div class="DataEntriesCheck">
+
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Decongestent (Pseudoephedrine)</span>
+    </label>
+    <br>
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Cough Relief (Dextromethorphan)</span>
+    </label>
+    <br>
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Anti-Allergy (Loratadine)</span>
+    </label>
+    <br>
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Pain Relief (Acetaminophen)</span>
+    </label>
+    <br>
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Pain Relief (Ibuprofen)</span>
+    </label>
+    <br>
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Anti Acid (Calcium Carbonate)</span>
+    </label>
+    <br>
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Insulin</span>
+    </label>
+    <br>
+    <label class="pure-material-checkbox">
+        <input type="checkbox">
+        <span>Inhaler</span>
+    </label>
+</div>
+<br>
+<p>Select hygiene supplies you require</p>
+<div class="DataEntriesCheck">
+<label class="pure-material-checkbox">
+    <input type="checkbox">
+    <span>Hand Sanitizer</span>
+</label>
+<br>
+<label class="pure-material-checkbox">
+    <input type="checkbox">
+    <span>Surface Disinfectant</span>
+</label>
+<br>
+<label class="pure-material-checkbox">
+    <input type="checkbox">
+    <span>Mask</span>
+</label>
+    <br>
+</label><label class="pure-material-checkbox">
+    <input type="checkbox">
+    <span>Gloves</span>
+</label>
+</div>
+
+<button onclick="returnHome()" style="border-radius: 20px" class="btn waves-effect waves-light submitBut2">Submit
+    <i class="material-icons right">send</i>
+</button>
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+});
+function returnHome(){
+    let query = location.search;
+    window.location.href = "index.html" + query;
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

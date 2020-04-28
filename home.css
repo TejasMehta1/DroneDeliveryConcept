@@ -1,0 +1,127 @@
+.droneBack{
+    background-image: url("droneBack.jpg");
+    background-repeat: no-repeat;
+    background-size: 375px 700px;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.titleDrone{
+    margin-top: 50px;
+}
+
+.buttonContainer{
+   margin-top: 20px;
+}
+
+.labelContainer{
+    width: 78%;
+    margin-left: 35px;
+}
+
+.submitBut{
+    margin-top: 50px;
+}
+.submitBut3{
+    margin-top: 83px;
+}
+[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after{
+    border: 2px solid white!important;
+}
+
+.DataEntries{
+    text-align: left;
+    width: 60%;
+    color: white;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+.DataEntriesSelect{
+    text-align: left;
+    width: 70%;
+    color: white;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+label{
+    color: white !important;
+    margin-bottom: -50px;
+}
+.DataEntriesCheck{
+     text-align: left;
+     width: 80%;
+     color: white;
+     margin-left: 65px;
+     margin-top: 15px;
+ }
+
+.DataEntriesRadio{
+    text-align: left;
+    width: 85%;
+    color: white;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+input{
+    padding: 0!important;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif!important;
+    margin-bottom: -50px!important;
+}
+
+select{
+    width: 50%!important;
+    background-color: transparent!important;
+    border-radius: 50px!important;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif!important;
+}
+
+.submitBut2{
+    margin-top: 28px;
+}
+span{
+    margin-bottom: 50px;
+}
+
+[type="checkbox"]+span:not(.lever):before{
+    color: red;
+    border: 2px solid white!important;
+    border-radius: 4px!important;
+}
+
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-radius: 0px!important;
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent!important;
+    border-left: 2px solid transparent!important;
+    border-right: 2px solid #26a69a!important;
+    border-bottom: 2px solid #26a69a!important;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+
+/* Checked, Indeterminate */
+
+
+
+
+
+
+
+
+
+
+
+

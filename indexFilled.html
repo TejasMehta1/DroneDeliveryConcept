@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drone Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+</head>
+<body class="droneBack">
+
+
+<div class="container">
+    <h1 class="titleDrone">Delivery</h1>
+    <p>Food, medicine, and hygeine supplies delivered right to your doorstep</p>
+</div>
+<div class="DataEntries">
+
+    <label for="fname">Name:</label>
+    <input type="text" value="Tej Anand" id="fname" name="fname"><br><br>
+    <label for="lname">Email:</label>
+    <input type="text" value="tej.anand@utexas.edu"id="lname" name="lname"><br><br>
+    <label for="lname">Address:</label>
+    <input type="text" value="23 MIS Ave."id="address" name="lname"><br><br>
+
+
+</div>
+<h5><b>Select Supplies</b></h5>
+<div class="buttonContainer col-lg-4">
+    <a href="medSupplies.html" style="float:left; margin-left: 60px" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">local_hospital</i></a>
+    <a href="foodSupplies.html" style="float:right; margin-right: 60px" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">fastfood</i></a>
+</div>
+<br>
+<br>
+<br>
+<div class="labelContainer col-lg-4">
+    <label style="float: left">Medical Supplies</label>
+    <label style="float: right">Food Supplies</label>
+</div>
+<a href="schedule.html" style="border-radius: 20px" class="btn waves-effect waves-light submitBut">Submit
+    <i class="material-icons right">send</i>
+</a>
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+});</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
