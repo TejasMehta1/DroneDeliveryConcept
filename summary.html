@@ -77,6 +77,7 @@ function init() {
     }
     let dateStart = new Date(queryArr[4]);
     let dateEnd = new Date(queryArr[4]);
+    dateStart.setDate(dateStart.getDate()+1);
     dateEnd.setDate(dateStart.getDate()+queryArr[3]*7);
     document.getElementById("shipping").innerHTML = "<b>Expect first delivery from " + dateStart.toLocaleDateString() + " to " + dateEnd.toLocaleDateString() + "</b>";
 }
